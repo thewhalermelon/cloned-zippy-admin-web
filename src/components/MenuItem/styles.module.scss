@@ -1,0 +1,37 @@
+.space {
+  gap: 30px;
+
+  .icon {
+    color: #fff;
+    font-size: 24px;
+    transition: 0.2s ease;
+  }
+
+  .text {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.4s ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .icon {
+      color: #4ecbc3;
+    }
+
+    .text {
+      color: #4ecbc3;
+    }
+  }
+
+  &.selected {
+    .icon {
+      color: #4ecbc3;
+    }
+
+    .text {
+      color: #4ecbc3;
+    }
+  }
+}

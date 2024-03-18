@@ -1,0 +1,114 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+// ANCHOR - Set min width for Search Button
+.ant-input-group-addon {
+  .ant-btn {
+    min-width: unset;
+  }
+}
+
+// ANCHOR - Set min width for Button
+.ant-btn {
+  min-width: 120px;
+}
+
+// ANCHOR - Set min height for Modal
+.ant-modal-body {
+  min-height: 80px;
+}
+
+// ANCHOR - Customize Tabs in Push Message
+.ant-tabs.ant-tabs-card {
+  .ant-tabs-nav {
+    &::before {
+      border-bottom: none;
+    }
+
+    .ant-tabs-tab {
+      background-color: #f1f3f6;
+      border: none;
+      display: block;
+      min-width: 140px;
+      text-align: center;
+
+      &.ant-tabs-tab-active {
+        background-color: #333;
+
+        .ant-tabs-tab-btn {
+          color: #fff;
+        }
+      }
+
+      & + .ant-tabs-tab {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+// ANCHOR - Break word in Form Label
+.ant-form-item-required {
+  text-align: start;
+  white-space: normal;
+  word-break: break-word;
+  width: 127px;
+
+  &::after {
+    content: '';
+  }
+}
+
+// ANCHOR - Customize Radio Button in Form
+.ant-radio-button-wrapper {
+  z-index: 1;
+
+  &:hover {
+    background-color: #f1f3f6;
+    color: #333;
+  }
+
+  &.ant-radio-button-wrapper-checked {
+    background-color: rgba(30, 152, 215, 0.20392156862745098);
+    border-color: rgba(30, 152, 215, 1);
+    color: #1e98d7;
+
+    &:hover {
+      background-color: rgba(30, 152, 215, 0.20392156862745098);
+      border-color: rgba(30, 152, 215, 1);
+      color: #1e98d7;
+    }
+  }
+}
+
+// ANCHOR - Customize DatePicker Position
+.ant-picker {
+  transform: translateX(-200px);
+  opacity: 0;
+  z-index: -1;
+  position: relative;
+  transition: 0.5s ease;
+
+  &.show {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+// ANCHOR - Customize DatePicker Color
+.ant-picker-dropdown .ant-picker-panel-container {
+  background-color: #fff;
+
+  .ant-picker-month-btn,
+  .ant-picker-year-btn,
+  .ant-picker-decade-btn {
+    color: #333;
+
+    &:hover {
+      color: #1e98d7;
+    }
+  }
+}
