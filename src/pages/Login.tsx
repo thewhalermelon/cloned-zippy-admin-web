@@ -6,10 +6,18 @@ import MainLayout from '../layout';
 import Zippi from '../assets/images/zippy.png';
 import LoginForm from '../forms/LoginForm';
 import { ADMIN_TEXT_WIDTH } from '../constant';
+import { Navigate, useLocation } from 'react-router';
 
 interface IProps {}
 
 const Login: FC<IProps> = () => {
+  const location = useLocation();
+  const isAuthenticated = JSON.parse(localStorage.getItem('is-auth') || 'false');
+
+  if (isAuthenticated) {
+    return <Navigate to={'/membership'} replace state={{ from: location }} />;
+  }
+
   return (
     <MainLayout>
       <Flex vertical align='center' justify='center' style={{ height: '100%' }}>

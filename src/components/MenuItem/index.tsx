@@ -22,7 +22,13 @@ const MenuItem: FC<IProps> = ({ Icon, title, path }) => {
   return (
     <Space
       className={`${styles.space} ${getFirstPathURL(location.pathname).includes(path) ? styles.selected : ''}`}
-      onClick={() => handleNavigate(navigate, path)}
+      onClick={() => {
+        if (path === '/login') {
+          localStorage.removeItem('is-auth');
+        }
+
+        handleNavigate(navigate, path);
+      }}
     >
       <Icon className={styles.icon} />
       <Typography.Text className={styles.text}>{title}</Typography.Text>

@@ -17,12 +17,12 @@ export const exportToExcel = (tableData: IMemberShipTableData[], fileName = 'tab
   const wb = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb, ws, 'Sheet1');
 
-  // Buffer
+  // ANCHOR - Buffer
   const wbout = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
 
-  // Create a Blob
+  // ANCHOR - Create a Blob
   const blob = new Blob([wbout], { type: 'application/octet-stream' });
 
-  // Save the file
+  // ANCHOR - Save the file
   saveAs(blob, `${fileName}.xlsx`);
 };

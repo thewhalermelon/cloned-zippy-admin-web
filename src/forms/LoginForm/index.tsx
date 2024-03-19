@@ -30,6 +30,7 @@ const LoginForm: FC<IProps> = () => {
     const correctPassword = 'dihisoft1234';
 
     if (email === correctEmail && password === correctPassword) {
+      localStorage.setItem('is-auth', JSON.stringify(true));
       navigate('/membership');
     } else {
       error();

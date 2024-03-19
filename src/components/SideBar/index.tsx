@@ -24,7 +24,7 @@ const SideBar: FC<IProps> = () => {
         <Flex vertical align='center'>
           <Divider />
           <Space direction='vertical' align='start' size={30}>
-            <MenuItem Icon={LogoutOutlined} title='Log out' path='*' />
+            <MenuItem Icon={LogoutOutlined} title='Log out' path='/login' />
           </Space>
         </Flex>
       </Flex>
