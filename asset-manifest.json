@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cloned-zippy-admin-web/static/css/main.9359687e.css",
-    "main.js": "/cloned-zippy-admin-web/static/js/main.4b41bd5d.js",
+    "main.css": "/cloned-zippy-admin-web/static/css/main.802feb42.css",
+    "main.js": "/cloned-zippy-admin-web/static/js/main.75c66c12.js",
     "static/js/453.427f0b1f.chunk.js": "/cloned-zippy-admin-web/static/js/453.427f0b1f.chunk.js",
     "static/media/Pretendard-Light.otf": "/cloned-zippy-admin-web/static/media/Pretendard-Light.65372b5df865e8aa758a.otf",
     "static/media/Pretendard-Medium.otf": "/cloned-zippy-admin-web/static/media/Pretendard-Medium.902a118c9bf50b588451.otf",
@@ -14,12 +14,12 @@
     "static/media/Pretendard-Thin.otf": "/cloned-zippy-admin-web/static/media/Pretendard-Thin.e45abc28d4828e92dd10.otf",
     "static/media/zippy.png": "/cloned-zippy-admin-web/static/media/zippy.3b2f00a2d0ee7ed5bced.png",
     "index.html": "/cloned-zippy-admin-web/index.html",
-    "main.9359687e.css.map": "/cloned-zippy-admin-web/static/css/main.9359687e.css.map",
-    "main.4b41bd5d.js.map": "/cloned-zippy-admin-web/static/js/main.4b41bd5d.js.map",
+    "main.802feb42.css.map": "/cloned-zippy-admin-web/static/css/main.802feb42.css.map",
+    "main.75c66c12.js.map": "/cloned-zippy-admin-web/static/js/main.75c66c12.js.map",
     "453.427f0b1f.chunk.js.map": "/cloned-zippy-admin-web/static/js/453.427f0b1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9359687e.css",
-    "static/js/main.4b41bd5d.js"
+    "static/css/main.802feb42.css",
+    "static/js/main.75c66c12.js"
   ]
 }
